@@ -1,0 +1,14 @@
+node_modules
+.vscode
+.DS_Store
+Dockerfile
+README.md
+test
+dist
+.eslintrc
+.prettierrc
+.env.example
+.git
+.gitignore
+.dockerignore
+docker-compose.yml

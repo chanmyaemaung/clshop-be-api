@@ -1,0 +1,17 @@
+FROM node:20
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN npm install -g pnpm
+
+RUN pnpm install
+
+RUN pnpm build
+
+RUN rm -rf ./src
+
+EXPOSE 8000
+
+CMD ["pnpm", "start:prod"]
