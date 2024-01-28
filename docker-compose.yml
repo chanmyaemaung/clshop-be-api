@@ -24,7 +24,9 @@ services:
     env_file:
       - .env
     environment:
-      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_USER: ${DATASOURCE_USERNAME}
+      POSTGRES_PASSWORD: ${DATASOURCE_POSTGRES_PASSWORD}
+      POSTGRES_DB: ${DATASOURCE_DATABASE}
 
   # CL SHOP Adminer Database Manager
   adminer:
