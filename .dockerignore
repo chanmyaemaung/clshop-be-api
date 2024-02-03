@@ -1,0 +1,17 @@
+node_modules
+.vscode
+.DS_Store
+Dockerfile
+README.md
+test
+dist
+.eslintrc
+.prettierrc
+.env.example
+.git
+.gitignore
+.dockerignore
+docker-compose.yml
+docker-compose.prod.yml
+Dockerfile.prod
+docker-up-no-cache.sh
