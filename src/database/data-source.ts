@@ -8,5 +8,5 @@ export default new DataSource({
   type: "postgres",
   url: process.env.DATASOURCE_URL,
   entities: ["dist/domain/**/*.entity.js"],
-  migrations: ["dist/database/migrations/**/*.js"]
+  migrations: ["dist/database/migrations/**/*.js"],
 });

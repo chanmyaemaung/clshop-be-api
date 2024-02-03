@@ -8,7 +8,7 @@ This is the backend API for the CLSHOP project. It is written in Node JS and ful
 
 - Node JS (v20.11.0 LTS)
 - Postgres (Latest)
-- Adminer (Latest)
+- PGAdmin (Latest)
 
 ### Build docker image for development and run it
 
@@ -27,3 +27,15 @@ docker-compose -f docker-compose.prod.yml up --build
 `bash
 docker-compose down --rmi all --volumes
 `
+
+### Run docker bash exec with no cache
+
+```bash
+./docker-up-no-cache
+```
+
+### Stop and remove all containers
+
+```bash
+docker-compose down --remove-orphans
+```

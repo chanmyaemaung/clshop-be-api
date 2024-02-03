@@ -12,3 +12,6 @@ dist
 .gitignore
 .dockerignore
 docker-compose.yml
+docker-compose.prod.yml
+Dockerfile.prod
+docker-up-no-cache.sh
