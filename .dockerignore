@@ -5,7 +5,7 @@ Dockerfile
 README.md
 test
 dist
-.eslintrc
+.eslintrc.json
 .prettierrc
 .env.example
 .git
@@ -15,3 +15,5 @@ docker-compose.yml
 docker-compose.prod.yml
 Dockerfile.prod
 docker-up-no-cache.sh
+up.sh
+down.sh

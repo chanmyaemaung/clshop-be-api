@@ -1,22 +1,6 @@
 version: '3.8'
 
 services:
-  webapi:
-    container_name: webapi
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - 8000:8000
-    env_file:
-      - .env
-    environment:
-      - PORT=${PORT}
-      - NODE_ENV=${NODE_ENV}
-    volumes:
-      - ./src:/usr/src/app/src
-    networks:
-      - chen_network
 
   postgres:
     container_name: postgres
