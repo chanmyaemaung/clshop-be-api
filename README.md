@@ -31,11 +31,11 @@ docker-compose down --rmi all --volumes
 ### Run docker bash exec with no cache
 
 ```bash
-./docker-up-no-cache
+./up.sh
 ```
 
 ### Stop and remove all containers
 
 ```bash
-docker-compose down --remove-orphans
+./down.sh
 ```
