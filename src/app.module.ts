@@ -2,6 +2,7 @@ import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { CommonModule } from "./common/common.module";
 import { DatabaseModule } from "./database";
+import { OrdersModule } from "./domain/orders/orders.module";
 import { UsersModule } from "./domain/users/users.module";
 import { EnvModule } from "./env";
 
@@ -12,6 +13,7 @@ import { EnvModule } from "./env";
     ConfigModule.forRoot({ isGlobal: true }),
     DatabaseModule,
     EnvModule,
+    OrdersModule,
   ],
   controllers: [],
   providers: [],
